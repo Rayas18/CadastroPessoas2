@@ -6,7 +6,7 @@ using System.Threading.Tasks;
 
 namespace CadastroPessoas2
 {
-    public class Pessoa
+    public class program
     {
     }
 }

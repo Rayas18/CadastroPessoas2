@@ -8,18 +8,16 @@ namespace CadastroPessoas2
         public string Nome;
         public int Idade;
 
+        public Pessoa(string nome, int idade)
+        {
+            Nome = nome;
+            Idade = idade;
+        }
+
         public void Apresentar()
         {
             Console.WriteLine("Nome: " + Nome);
             Console.WriteLine("Idade: " + Idade);
-        }
-    }
-
-    internal class Program
-    {
-        static void Main(string[] args)
-        {
-
         }
     }
 }

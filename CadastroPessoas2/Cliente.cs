@@ -9,6 +9,12 @@ namespace CadastroPessoas2
     public class Cliente : Pessoa
     {
         public string CodigoCliente;
+        
+        public Cliente(string nome, int idade, string codigoCliente)
+               : base(nome, idade)
+        {
+            CodigoCliente = codigoCliente;
+        }
 
         public void ExibirDadosCliente()
         {
