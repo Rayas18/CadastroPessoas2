@@ -8,7 +8,7 @@ namespace CadastroPessoas2
 {
     public class Cliente : Pessoa
     {
-        public string CodigoCliente;
+        public string CodigoCliente { get; set; }
         
         public Cliente(string nome, int idade, string codigoCliente)
                : base(nome, idade)
