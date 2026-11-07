@@ -28,6 +28,14 @@ namespace CadastroPessoas2
                 7000.00m,
                 "Tecnologia");
 
+            Pessoa pessoaCliente = cliente;
+            Pessoa pessoaFuncionario = funcionario;
+            Pessoa pessoaGerente = gerente;
+
+            pessoaCliente.Apresentar();
+            pessoaFuncionario.Apresentar();
+            pessoaGerente.Apresentar();
+
             Console.WriteLine("=== Cliente ===");
             cliente.ExibirDadosCliente();
 

@@ -15,6 +15,13 @@ namespace CadastroPessoas2
         {
             Departamento = departamento;
         }
+        public override void Apresentar()
+        {
+            Console.WriteLine("Gerente: " + GetNome());
+            Console.WriteLine("Idade: " + Idade);
+            Console.WriteLine("Salário: " + Salario);
+            Console.WriteLine("Departamento: " + Departamento);
+        }
 
         public void ExibirDadosGerente()
         {

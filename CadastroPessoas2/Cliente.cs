@@ -13,7 +13,16 @@ namespace CadastroPessoas2
         public Cliente(string nome, int idade, string codigoCliente)
                : base(nome, idade)
         {
+
             CodigoCliente = codigoCliente;
+
+        }
+
+        public override void Apresentar()
+        {
+            Console.WriteLine("Cliente: " + GetNome());
+            Console.WriteLine("Idade: " + Idade);
+            Console.WriteLine("Código: " + CodigoCliente);
         }
 
         public void ExibirDadosCliente()

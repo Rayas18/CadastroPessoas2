@@ -16,6 +16,12 @@ namespace CadastroPessoas2
             Salario = salario;
         }
 
+        public override void Apresentar()
+        {
+            Console.WriteLine("Funcionário: " + GetNome());
+            Console.WriteLine("Idade: " + Idade);
+            Console.WriteLine("Salário: " + Salario);
+        }
         public decimal CalcularBonus()
         {
             return Salario * 0.10m;
