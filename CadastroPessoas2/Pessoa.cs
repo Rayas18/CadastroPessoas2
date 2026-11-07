@@ -40,10 +40,19 @@ namespace CadastroPessoas2
             this.idade = idade;
         }
 
-        public void Apresentar()
+        public virtual void Apresentar()
         {
             Console.WriteLine("Nome: " + GetNome());
             Console.WriteLine("Idade: " + idade);
+        }
+        public void Apresentar(bool mostrarTipo)
+        {
+            Apresentar();
+
+            if (mostrarTipo)
+            {
+                Console.WriteLine("Tipo: Pessoa");
+            }
         }
     }
 }

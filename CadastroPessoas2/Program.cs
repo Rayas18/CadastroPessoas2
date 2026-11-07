@@ -15,6 +15,9 @@ namespace CadastroPessoas2
                 28,
                 "CLI-001");
 
+            cliente.Apresentar();
+            cliente.Apresentar(true);
+
             Funcionario funcionario = new Funcionario("Carlos Lima",
                 35,
                 4500.00m);
