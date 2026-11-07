@@ -10,6 +10,8 @@ namespace CadastroPessoas2
     {
         static void Main(string[] args)
         {
+            Cliente clienteSemCodigo = new Cliente("Bruno Lima", 31);
+
             Cliente cliente = new Cliente(
                 "Ana Souza",
                 28,

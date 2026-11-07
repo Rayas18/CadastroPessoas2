@@ -18,6 +18,12 @@ namespace CadastroPessoas2
 
         }
 
+        public Cliente(string nome, int idade)
+    : base(nome, idade)
+        {
+            CodigoCliente = "SEM-CODIGO";
+        }
+
         public override void Apresentar()
         {
             Console.WriteLine("Cliente: " + GetNome());
